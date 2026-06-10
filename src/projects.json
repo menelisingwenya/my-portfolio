@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Kaiyō — Japanese Sea Cuisine",
+      "description": "An ultra-premium, interactive web sanctuary for Kaiyō — a 3-Michelin star elite Japanese Sea Cuisine restaurant, built with React 19, Vite, Tailwind CSS, and Framer Motion.",
+      "tags": ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+      "image": "Images/kayio.png",
+      "category": "Frontend",
+      "liveUrl": "https://kaiyocuisine-git-main-menelisingwenyas-projects.vercel.app",
+      "repoUrl": "https://github.com/menelisingwenya/Kaiy--Japanese-Sea-Cuisine-"
+    },
+    {
+      "id": 2,
+      "title": "Todo List App",
+      "description": "A fully functional todo list application built with vanilla JavaScript. Features include add, delete, mark complete, and local storage persistence.",
+      "tags": ["HTML", "CSS", "JavaScript" , "React"],
+      "image": "Images/list.png",
+      "category": "Frontend",
+      "liveUrl": "https://form-n3ql-h9i6d8pf5-menelisingwenyas-projects.vercel.app",
+      "repoUrl": "https://github.com/menelisingwenya/todo-list"
+    },
+    {
+      "id": 3,
+      "title": "Weather App",
+      "description": "A real-time weather application that fetches data from a weather API. Displays temperature, humidity, wind speed, and a 5-day forecast with dynamic icons.",
+      "tags": ["HTML", "CSS", "JavaScript", "API"],
+      "image": "Images/weather app.png",
+      "category": "Frontend",
+      "liveUrl": "https://menelisingwenya.github.io/weather-app/",
+      "repoUrl": "https://github.com/menelisingwenya/Weather-app"
+    },
+    {
+      "id": 4,
+      "title": "Multi-Section Personal Website",
+      "description": "A responsive multi-section personal website built using HTML, CSS, and JavaScript. Showcases a modern layout with a navigation header, hero banner, about section, services, testimonials, newsletter subscription, and footer.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "image": "Images/my-website.png",
+      "category": "Frontend",
+      "liveUrl": "https://menelisingwenya.github.io/my-website/",
+      "repoUrl": "https://github.com/menelisingwenya/my-website.git"
+    },
+    {
+      "id": 5,
+      "title": "Landing Page",
+      "description": "A responsive landing page built with HTML and CSS. Features smooth scrolling, a hero section, cards grid, and a contact form.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "image": "Images/travel .png",
+      "category": "Frontend",
+      "liveUrl": "https://menelisingwenya.github.io/travel-website/",
+      "repoUrl": "https://github.com/menelisingwenya/travel-website"
+    },
+    {
+      "id": 6,
+      "title": "ShadePro Website",
+      "description": "Shade Pro is a modern, responsive business landing page built using HTML, CSS, and JavaScript. It is designed to showcase services, build trust with users, and drive engagement through a clean and visually appealing interface.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "image": "Images/shado pro.png",
+      "category": "Frontend",
+      "liveUrl": " https://menelisingwenya.github.io/shadepro-website/",
+      "repoUrl": "https://github.com/menelisingwenya/shadepro-website.git"
+    }
+  ]
+}

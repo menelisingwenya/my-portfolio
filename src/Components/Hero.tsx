@@ -29,7 +29,7 @@ const Hero = () => {
         <PhotoWrapper>
           <DecorLeft>&lt;</DecorLeft>
           <GlowRing />
-          <Photo src="/Images/profile.png" alt="Menelisi Ngwenya" />
+          <Photo src="./Images/profile.png" alt="Menelisi Ngwenya" />
           <DecorRight>&gt;</DecorRight>
         </PhotoWrapper>
       </RightSide>

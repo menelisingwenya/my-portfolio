@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import HtmlIcon from '@mui/icons-material/Html';
-import CssIcon from '@mui/icons-material/Css';
-import JavascriptIcon from '@mui/icons-material/Javascript';
-import CodeIcon from '@mui/icons-material/Code';
-import BoltIcon from '@mui/icons-material/Bolt';
-import AltRouteIcon from '@mui/icons-material/AltRoute';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
+const CssSvgIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+    <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716H7.664l.24 2.573h6.987l-.39 4.089-2.49.744-2.607-.764-.175-1.776H6.78l.33 3.596L12 19.766l4.885-1.532.727-8.118H9.585l-.208-2.39h8.636l.199-2.243z"/>
+  </svg>
+);
 
 const Hero = () => {
   return (
@@ -27,42 +27,35 @@ const Hero = () => {
 
       <RightSide>
         <PhotoWrapper>
-          <DecorLeft>&lt;</DecorLeft>
+          <DecorLeft>{'<'}</DecorLeft>
           <GlowRing />
           <Photo src="./Images/profile.png" alt="Menelisi Ngwenya" />
-          <DecorRight>&gt;</DecorRight>
+          <DecorRight>{'>'}</DecorRight>
         </PhotoWrapper>
       </RightSide>
 
       <SkillsRow>
         <SkillsContainer>
           <SkillBadge>
-            <SkillIcon><HtmlIcon /></SkillIcon>
-            HTML5
+            <SkillIcon><SkillImg src="./Images/html_5_logo.png" alt="HTML5" /></SkillIcon>
           </SkillBadge>
           <SkillBadge>
-            <SkillIcon><CssIcon /></SkillIcon>
-            CSS
+            <SkillIcon $color="#1572B6"><CssSvgIcon /></SkillIcon>
           </SkillBadge>
           <SkillBadge>
-            <SkillIcon><JavascriptIcon /></SkillIcon>
-            JavaScript
+            <SkillIcon><SkillImg src="./Images/js-logo.png" alt="JavaScript" /></SkillIcon>
           </SkillBadge>
           <SkillBadge>
-            <SkillIcon><CodeIcon /></SkillIcon>
-            React
+            <SkillIcon><SkillImg src="./Images/React-logo.png" alt="React" /></SkillIcon>
           </SkillBadge>
           <SkillBadge>
-            <SkillIcon><BoltIcon /></SkillIcon>
-            Vite
+            <SkillIcon><SkillImg src="./Images/vite-logo.png" alt="Vite" /></SkillIcon>
           </SkillBadge>
           <SkillBadge>
-            <SkillIcon><AltRouteIcon /></SkillIcon>
-            Git
+            <SkillIcon><SkillImg src="./Images/git-logo.png" alt="Git" /></SkillIcon>
           </SkillBadge>
           <SkillBadge>
-            <SkillIcon><GitHubIcon /></SkillIcon>
-            GitHub
+            <SkillIcon $color=""><GitHubIcon /></SkillIcon>
           </SkillBadge>
         </SkillsContainer>
       </SkillsRow>
@@ -122,7 +115,7 @@ const ButtonGroup = styled.div`
 
 const SolidBtn = styled.a`
   background: ${({ theme }) => theme.accent};
-  color: ${({ theme }) => theme.text};
+  color: #ffffff;
   padding: 10px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -218,7 +211,7 @@ const SkillsRow = styled.div`
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  padding: 32px 0 48px 0;
+  padding: 40px 0 48px 0;
   border-top: 1px solid ${({ theme }) => theme.mutedText}30;
 `;
 
@@ -226,38 +219,35 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 60px;
+  align-items: center;
 `;
+
 
 const SkillBadge = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: ${({ theme }) =>
-    theme.background === '#0d1117' ? '#161b22' : '#e4e4e4'};
-  border: 1px solid ${({ theme }) => theme.mutedText}25;
-  border-radius: 8px;
-  padding: 10px 18px;
+  gap: 6px;
   color: ${({ theme }) => theme.text};
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+`;
 
-  &:hover {
-    border-color: ${({ theme }) => theme.accent}60;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+const SkillIcon = styled.div<{ $color?: string }>`
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  line-height: 1;   
+  color: ${({ $color }) => $color || 'inherit'};
+
+  svg {
+    font-size: 60px;
   }
 `;
 
-const SkillIcon = styled.span`
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  line-height: 1;
-
-  svg {
-    font-size: 20px;
-  }
+const SkillImg = styled.img`
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 `;

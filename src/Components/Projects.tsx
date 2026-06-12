@@ -122,7 +122,7 @@ const TabBtn = styled.button<{ $active: boolean }>`
   background: ${({ theme, $active }) =>
     $active ? theme.accent : 'transparent'};
   color: ${({ theme, $active }) =>
-    $active ? theme.text : theme.mutedText};
+    $active ? '#ffffff' : theme.mutedText};
   border: 1px solid
     ${({ theme, $active }) =>
       $active ? theme.accent : theme.mutedText}40;
@@ -137,7 +137,7 @@ const TabBtn = styled.button<{ $active: boolean }>`
     border-color: ${({ theme, $active }) =>
       $active ? theme.accent : theme.accent}80;
     color: ${({ theme, $active }) =>
-      $active ? theme.text : theme.accent};
+      $active ? '#ffffff' : theme.accent};
   }
 `;
 
@@ -229,7 +229,7 @@ const LiveBtn = styled.a`
   align-items: center;
   gap: 6px;
   background: ${({ theme }) => theme.accent};
-  color: ${({ theme }) => theme.text};
+  color: #ffffff;
   padding: 8px 16px;
   border-radius: 6px;
   text-decoration: none;
@@ -264,7 +264,7 @@ const RepoBtn = styled.a`
 
 const Tag = styled.span`
   background: ${({ theme }) =>
-    theme.background === '#0d1117' ? '#0d1117' : '#f0f0f0'};
+    theme.background === '#0d1117' ? '#131a24' : '#f0f0f0'};
   color: ${({ theme }) => theme.accent};
   border: 1px solid ${({ theme }) => theme.accent}30;
   padding: 4px 12px;

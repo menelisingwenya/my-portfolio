@@ -206,7 +206,7 @@ const Contact = () => {
           <MuiThemeProvider theme={muiTheme}>
             <Form onSubmit={handleSubmit}>
               <TextField
-                variant="standard"
+                variant="outlined"
                 label="Username"
                 value={formValues.username}
                 onChange={handleChange('username')}
@@ -225,7 +225,7 @@ const Contact = () => {
                 fullWidth
               />
               <TextField
-                variant="filled"
+                variant="outlined"
                 label="Subject"
                 type="text"
                 value={formValues.subject}
@@ -349,7 +349,7 @@ const Form = styled.form`
 
 const SendBtn = styled.button`
   background: ${({ theme }) => theme.accent};
-  color: ${({ theme }) => theme.text};
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   padding: 14px 24px;
